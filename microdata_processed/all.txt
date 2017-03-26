@@ -1,0 +1,917 @@
+
+Call:
+C5.0.formula(formula = morethan60kyr ~ ., data = train, trials = 1)
+
+
+C5.0 [Release 2.07 GPL Edition]  	Sun Nov 27 21:35:37 2016
+-------------------------------
+
+Class specified by attribute `outcome'
+
+Read 41864 cases (193 attributes) from undefined.data
+
+Decision tree:
+
+nocs_Chefs_and_cooks__supervisors__and_other_occupations_in_food_and_beverage_service > 0: 0 (116/3)
+nocs_Chefs_and_cooks__supervisors__and_other_occupations_in_food_and_beverage_service <= 0: [S1]
+
+SubTree [S1]
+
+nocs_Service_supervisors__occupations_in_travel_and_accommodation__attendants_in > 0: 0 (494/41)
+nocs_Service_supervisors__occupations_in_travel_and_accommodation__attendants_in <= 0:
+:...nochrd_Clerical_personnel > 0:
+    :...naics_Mining_and_oil_and_gas_extraction > 0: 1 (28/13)
+    :   naics_Mining_and_oil_and_gas_extraction <= 0:
+    :   :...hrswrk > 44:
+    :       :...locstud_Ontario <= 0: 0 (182/44)
+    :       :   locstud_Ontario > 0:
+    :       :   :...marst_Legally_married <= 0: 0 (59/18)
+    :       :       marst_Legally_married > 0:
+    :       :       :...attsch_Attended <= 0: 1 (51/18)
+    :       :           attsch_Attended > 0: 0 (6/1)
+    :       hrswrk <= 44:
+    :       :...hdgree <= 10: 0 (1720/173)
+    :           hdgree > 10:
+    :           :...locstud_Southeast_and_Southern_Asia > 0: 0 (38)
+    :               locstud_Southeast_and_Southern_Asia <= 0:
+    :               :...citizen_Other > 0: 0 (18/1)
+    :                   citizen_Other <= 0:
+    :                   :...pr_BritishColumbia > 0: 0 (14)
+    :                       pr_BritishColumbia <= 0:
+    :                       :...marst_Divorced > 0: 1 (12/2)
+    :                           marst_Divorced <= 0:
+    :                           :...sex_female > 0: 0 (83/20)
+    :                               sex_female <= 0:
+    :                               :...hrswrk <= 36: 0 (13/1)
+    :                                   hrswrk > 36:
+    :                                   :...hhsize <= 2: 0 (11/3)
+    :                                       hhsize > 2: 1 (20/3)
+    nochrd_Clerical_personnel <= 0:
+    :...agegrp <= 30:
+        :...naics_Mining_and_oil_and_gas_extraction > 0:
+        :   :...mtnno_No_non_official_language <= 0: 0 (28/12)
+        :   :   mtnno_No_non_official_language > 0: [S2]
+        :   naics_Mining_and_oil_and_gas_extraction <= 0:
+        :   :...naics_Utilities > 0:
+        :       :...nochrd_Managers > 0: 1 (10)
+        :       :   nochrd_Managers <= 0:
+        :       :   :...cma_Vancouver > 0: 1 (7)
+        :       :       cma_Vancouver <= 0:
+        :       :       :...hrswrk <= 43: 0 (54/24)
+        :       :           hrswrk > 43: 1 (14/1)
+        :       naics_Utilities <= 0: [S3]
+        agegrp > 30:
+        :...nochrd_Semi_skilled_manual_workers > 0: 0 (550/88)
+            nochrd_Semi_skilled_manual_workers <= 0:
+            :...nochrd_Other_sales_and_service_personnel > 0: 0 (85/8)
+                nochrd_Other_sales_and_service_personnel <= 0:
+                :...nocs_Childcare_and_home_support_workers > 0:
+                    :...hdgree <= 9: 0 (99/5)
+                    :   hdgree > 9:
+                    :   :...kol_Both_EnglishFrench <= 0: 0 (30/7)
+                    :       kol_Both_EnglishFrench > 0: 1 (4)
+                    nocs_Childcare_and_home_support_workers <= 0:
+                    :...nochrd_Other_manual_workers > 0: 0 (107/15)
+                        nochrd_Other_manual_workers <= 0:
+                        :...nocs_Construction_trades > 0: 0 (75/14)
+                            nocs_Construction_trades <= 0: [S4]
+
+SubTree [S2]
+
+nochrd_Administrative_and_senior_clerical_personnel <= 0: 1 (112/31)
+nochrd_Administrative_and_senior_clerical_personnel > 0: 0 (8/3)
+
+SubTree [S3]
+
+nocs_Trades_helpers__construction__and_transportation_labourers_and_related_occupations > 0: 0 (29)
+nocs_Trades_helpers__construction__and_transportation_labourers_and_related_occupations <= 0:
+:...agegrp <= 25:
+    :...nocs_Teachers_and_professors > 0: 0 (878/20)
+    :   nocs_Teachers_and_professors <= 0:
+    :   :...naics_Accommodation_and_food_services > 0: 0 (53)
+    :       naics_Accommodation_and_food_services <= 0:
+    :       :...nocs_Occupations_unique_to_primary_industries > 0: 0 (26)
+    :           nocs_Occupations_unique_to_primary_industries <= 0: [S5]
+    agegrp > 25:
+    :...sex_female > 0:
+        :...nochrd_Skilled_sales_and_service_personnel > 0: 1 (51/22)
+        :   nochrd_Skilled_sales_and_service_personnel <= 0:
+        :   :...hrswrk <= 47: 0 (2666/582)
+        :       hrswrk > 47:
+        :       :...nochrd_Managers > 0: 1 (80/30)
+        :           nochrd_Managers <= 0:
+        :           :...nochrd_Professionals <= 0: 0 (59/12)
+        :               nochrd_Professionals > 0:
+        :               :...cip_Social_BehaviouralSciences_Law <= 0: 0 (209/83)
+        :                   cip_Social_BehaviouralSciences_Law > 0: 1 (53/19)
+        sex_female <= 0:
+        :...naics_Arts__entertainment_and_recreation > 0: 0 (40/4)
+            naics_Arts__entertainment_and_recreation <= 0:
+            :...naics_Other_services_except_public_administration > 0: 0 (63/11)
+                naics_Other_services_except_public_administration <= 0:
+                :...nochrd_Semi_skilled_manual_workers > 0:
+                    :...fol_French <= 0: 0 (69/9)
+                    :   fol_French > 0:
+                    :   :...kol_Both_EnglishFrench <= 0: 0 (5/1)
+                    :       kol_Both_EnglishFrench > 0: 1 (8/1)
+                    nochrd_Semi_skilled_manual_workers <= 0:
+                    :...naics_Educational_services > 0:
+                        :...locstud_Quebec > 0: 0 (74/4)
+                        :   locstud_Quebec <= 0:
+                        :   :...pr_Ontario <= 0: 0 (149/36)
+                        :       pr_Ontario > 0:
+                        :       :...marst_Single <= 0: 1 (106/48)
+                        :           marst_Single > 0: 0 (55/16)
+                        naics_Educational_services <= 0:
+                        :...nochrd_Semi_professionals_and_technicians > 0: [S6]
+                            nochrd_Semi_professionals_and_technicians <= 0: [S7]
+
+SubTree [S4]
+
+nochrd_Semi_professionals_and_technicians > 0:
+:...naics_Transportation_and_warehousing > 0:
+:   :...sex_female <= 0: 1 (43/9)
+:   :   sex_female > 0: 0 (9/2)
+:   naics_Transportation_and_warehousing <= 0:
+:   :...naics_Administrative_and_support__waste_management_and > 0: 0 (32/1)
+:       naics_Administrative_and_support__waste_management_and <= 0: [S8]
+nochrd_Semi_professionals_and_technicians <= 0:
+:...nocs_Technical__assisting_and_related_occupations_in_health > 0:
+    :...naics_Health_care_and_social_assistance > 0: 0 (142/7)
+    :   naics_Health_care_and_social_assistance <= 0:
+    :   :...powst_Worked_in_a_different_county <= 0: 0 (21/4)
+    :       powst_Worked_in_a_different_county > 0: 1 (6/1)
+    nocs_Technical__assisting_and_related_occupations_in_health <= 0:
+    :...hrswrk <= 36:
+        :...naics_Utilities > 0: 1 (85/12)
+        :   naics_Utilities <= 0:
+        :   :...nocs_Senior_management_occupations > 0: [S9]
+        :       nocs_Senior_management_occupations <= 0:
+        :       :...naics_Mining_and_oil_and_gas_extraction > 0: 1 (41/9)
+        :           naics_Mining_and_oil_and_gas_extraction <= 0:
+        :           :...nocs_Other_trades_occupations > 0:
+        :               :...naics_Wholesale_trade <= 0: 0 (25/1)
+        :               :   naics_Wholesale_trade > 0: 1 (2)
+        :               nocs_Other_trades_occupations <= 0: [S10]
+        hrswrk > 36: [S11]
+
+SubTree [S5]
+
+nocs_Clerical_occupations_and_clerical_supervisors > 0: 0 (33/1)
+nocs_Clerical_occupations_and_clerical_supervisors <= 0:
+:...naics_Other_services_except_public_administration > 0: 0 (103/7)
+    naics_Other_services_except_public_administration <= 0:
+    :...locstud_Southeast_and_Southern_Asia > 0: 0 (53/3)
+        locstud_Southeast_and_Southern_Asia <= 0:
+        :...nochrd_Administrative_and_senior_clerical_personnel > 0: 0 (208/19)
+            nochrd_Administrative_and_senior_clerical_personnel <= 0:
+            :...hrswrk <= 49: [S12]
+                hrswrk > 49:
+                :...mfs_Health_professions_and_related_technologies > 0:
+                    :...citizen_Other <= 0: 0 (75/8)
+                    :   citizen_Other > 0: 1 (4/1)
+                    mfs_Health_professions_and_related_technologies <= 0:
+                    :...locstud_British_Columbia > 0: [S13]
+                        locstud_British_Columbia <= 0:
+                        :...hdgree > 9: 1 (102/42)
+                            hdgree <= 9: [S14]
+
+SubTree [S6]
+
+cip_Health_Parks_Recreation_Fitness <= 0: 0 (178/44)
+cip_Health_Parks_Recreation_Fitness > 0: 1 (11/2)
+
+SubTree [S7]
+
+nochrd_Skilled_crafts_and_trades_workers > 0: 0 (39/9)
+nochrd_Skilled_crafts_and_trades_workers <= 0: [S15]
+
+SubTree [S8]
+
+nocs_Occupations_in_social_science__government_services_and_religion > 0:
+:...hrswrk <= 44: 0 (464/49)
+:   hrswrk > 44:
+:   :...mtnno_No_non_official_language <= 0: 0 (13)
+:       mtnno_No_non_official_language > 0:
+:       :...cip_Social_BehaviouralSciences_Law <= 0: 0 (38/11)
+:           cip_Social_BehaviouralSciences_Law > 0:
+:           :...agegrp <= 40: 0 (11/4)
+:               agegrp > 40: 1 (9)
+nocs_Occupations_in_social_science__government_services_and_religion <= 0:
+:...cma_Hamilton > 0: 1 (34/11)
+    cma_Hamilton <= 0:
+    :...sex_female > 0: 0 (521/124)
+        sex_female <= 0:
+        :...cip_Visual_PerformingArts_CommunicationsTechnologies > 0: 0 (34/7)
+            cip_Visual_PerformingArts_CommunicationsTechnologies <= 0:
+            :...marst_Single > 0: 0 (147/47)
+                marst_Single <= 0:
+                :...naics_Public_administration > 0: 1 (76/25)
+                    naics_Public_administration <= 0:
+                    :...citizen_Canada_birth <= 0: 0 (295/100)
+                        citizen_Canada_birth > 0: [S16]
+
+SubTree [S9]
+
+cow_Paid_worker_Originally_self_employed_without_paid_help__incorporated <= 0: 1 (184/50)
+cow_Paid_worker_Originally_self_employed_without_paid_help__incorporated > 0:
+:...cma_Vancouver <= 0: 0 (8/1)
+    cma_Vancouver > 0: 1 (2)
+
+SubTree [S10]
+
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers > 0: 0 (81/12)
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers <= 0:
+:...sex_female > 0:
+    :...nochrd_Managers > 0:
+    :   :...naics_Other_services_except_public_administration > 0:
+    :   :   :...powst_Worked_in_a_different_county <= 0: 0 (23/3)
+    :   :   :   powst_Worked_in_a_different_county > 0: 1 (2)
+    :   :   naics_Other_services_except_public_administration <= 0: [S17]
+    :   nochrd_Managers <= 0:
+    :   :...hrswrk <= 33: 0 (2428/659)
+    :       hrswrk > 33:
+    :       :...naics_Other_services_except_public_administration > 0: 0 (32/3)
+    :           naics_Other_services_except_public_administration <= 0: [S18]
+    sex_female <= 0:
+    :...locstud_Southeast_and_Southern_Asia > 0: 0 (50/8)
+        locstud_Southeast_and_Southern_Asia <= 0:
+        :...powst_No_fixed_address > 0: 0 (102/36)
+            powst_No_fixed_address <= 0:
+            :...naics_Other_services_except_public_administration > 0:
+                :...cip_Humanities <= 0: 1 (36/17)
+                :   cip_Humanities > 0: 0 (28/3)
+                naics_Other_services_except_public_administration <= 0:
+                :...mfs_Fine_and_applied_arts > 0:
+                    :...nocs_Teachers_and_professors <= 0: 0 (20/3)
+                    :   nocs_Teachers_and_professors > 0:
+                    :   :...kol_Both_EnglishFrench > 0: 0 (10/2)
+                    :       kol_Both_EnglishFrench <= 0:
+                    :       :...pr_BritishColumbia <= 0: 1 (14/2)
+                    :           pr_BritishColumbia > 0: 0 (2)
+                    mfs_Fine_and_applied_arts <= 0:
+                    :...naics_Public_administration > 0: [S19]
+                        naics_Public_administration <= 0:
+                        :...attsch_Attended > 0:
+                            :...marst_Legally_married <= 0: 0 (42/10)
+                            :   marst_Legally_married > 0: [S20]
+                            attsch_Attended <= 0:
+                            :...powst_Worked_at_home > 0: 0 (146/63)
+                                powst_Worked_at_home <= 0:
+                                :...pr_Quebec <= 0:
+                                    :...nochrd_Managers > 0: 1 (182/45)
+                                    :   nochrd_Managers <= 0: [S21]
+                                    pr_Quebec > 0:
+                                    :...hrswrk <= 33: 0 (248/94)
+                                        hrswrk > 33:
+                                        :...agegrp <= 40: [S22]
+                                            agegrp > 40:
+                                            :...cip_Humanities > 0: [S23]
+                                                cip_Humanities <= 0: [S24]
+
+SubTree [S11]
+
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers > 0:
+:...locstud_Southeast_and_Southern_Asia > 0: 0 (37/1)
+:   locstud_Southeast_and_Southern_Asia <= 0:
+:   :...naics_Manufacturing <= 0:
+:       :...naics_Information_and_cultural_industries <= 0: 0 (209/66)
+:       :   naics_Information_and_cultural_industries > 0: 1 (13/4)
+:       naics_Manufacturing > 0:
+:       :...marst_Single <= 0: 1 (24/6)
+:           marst_Single > 0: 0 (3)
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers <= 0:
+:...nocs_Clerical_occupations_and_clerical_supervisors > 0: 0 (117/38)
+    nocs_Clerical_occupations_and_clerical_supervisors <= 0:
+    :...naics_Accommodation_and_food_services > 0:
+        :...nocs_Senior_management_occupations > 0: 1 (12/2)
+        :   nocs_Senior_management_occupations <= 0:
+        :   :...locstud_Ontario <= 0: 0 (96/20)
+        :       locstud_Ontario > 0:
+        :       :...marst_Legally_married <= 0: 0 (9/1)
+        :           marst_Legally_married > 0:
+        :           :...agegrp <= 35: 0 (11/1)
+        :               agegrp > 35: [S25]
+        naics_Accommodation_and_food_services <= 0:
+        :...nochrd_Administrative_and_senior_clerical_personnel > 0:
+            :...sex_female > 0:
+            :   :...locstud_Southeast_and_Southern_Asia > 0: 0 (51/4)
+            :   :   locstud_Southeast_and_Southern_Asia <= 0:
+            :   :   :...hrswrk <= 47: 0 (329/89)
+            :   :       hrswrk > 47:
+            :   :       :...naics_Finance_and_insurance > 0: 1 (5)
+            :   :           naics_Finance_and_insurance <= 0: [S26]
+            :   sex_female <= 0:
+            :   :...mtnno_No_non_official_language <= 0:
+            :       :...naics_Mining_and_oil_and_gas_extraction > 0: 1 (4)
+            :       :   naics_Mining_and_oil_and_gas_extraction <= 0:
+            :       :   :...kol_Both_EnglishFrench <= 0: 0 (57/17)
+            :       :       kol_Both_EnglishFrench > 0: 1 (18/5)
+            :       mtnno_No_non_official_language > 0:
+            :       :...agegrp > 40:
+            :           :...naics_Manufacturing <= 0: 1 (135/29)
+            :           :   naics_Manufacturing > 0: 0 (14/6)
+            :           agegrp <= 40:
+            :           :...cip_Education > 0: 0 (5)
+            :               cip_Education <= 0:
+            :               :...marst_Legally_married > 0: 1 (57/17)
+            :                   marst_Legally_married <= 0: [S27]
+            nochrd_Administrative_and_senior_clerical_personnel <= 0:
+            :...naics_Agriculture__forestry__fishing_and_hunting > 0:
+                :...cma_other <= 0: 1 (39/16)
+                :   cma_other > 0:
+                :   :...mfs_Engineering_and_applied_sciences <= 0: 0 (47/7)
+                :       mfs_Engineering_and_applied_sciences > 0:
+                :       :...marst_Legally_married <= 0: 0 (3)
+                :           marst_Legally_married > 0: 1 (12/3)
+                naics_Agriculture__forestry__fishing_and_hunting <= 0: [S28]
+
+SubTree [S12]
+
+mfs_Health_professions_and_related_technologies <= 0: 0 (2261/386)
+mfs_Health_professions_and_related_technologies > 0:
+:...naics_Retail_trade <= 0: 0 (339/69)
+    naics_Retail_trade > 0:
+    :...locstud_Nova_Scotia <= 0: 1 (31/9)
+        locstud_Nova_Scotia > 0: 0 (4)
+
+SubTree [S13]
+
+naics_Arts__entertainment_and_recreation <= 0: 0 (50/5)
+naics_Arts__entertainment_and_recreation > 0: 1 (2)
+
+SubTree [S14]
+
+mfs_Commerce__management_and_business_administration <= 0:
+:...naics_Manufacturing <= 0: 0 (212/49)
+:   naics_Manufacturing > 0:
+:   :...marst_Legally_married <= 0: 0 (32/8)
+:       marst_Legally_married > 0: 1 (11/3)
+mfs_Commerce__management_and_business_administration > 0:
+:...cma_Edmonton > 0: 0 (6/1)
+    cma_Edmonton <= 0:
+    :...sex_female <= 0: 1 (56/20)
+        sex_female > 0: 0 (48/15)
+
+SubTree [S15]
+
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers > 0:
+:...mfs_Engineering_and_applied_sciences <= 0: 0 (47/10)
+:   mfs_Engineering_and_applied_sciences > 0:
+:   :...mtnno_Indo_Iranian_Languages <= 0: 1 (7)
+:       mtnno_Indo_Iranian_Languages > 0: 0 (2)
+nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers <= 0:
+:...hrswrk <= 35:
+    :...citizen_Other > 0: 0 (22/1)
+    :   citizen_Other <= 0:
+    :   :...attsch_Attended > 0: 0 (36/5)
+    :       attsch_Attended <= 0:
+    :       :...cma_Montreal > 0: 0 (38/6)
+    :           cma_Montreal <= 0:
+    :           :...naics_Manufacturing <= 0: 0 (126/62)
+    :               naics_Manufacturing > 0: 1 (8)
+    hrswrk > 35:
+    :...nocs_Occupations_in_art__culture__recreation_and_sport > 0: 0 (35/12)
+        nocs_Occupations_in_art__culture__recreation_and_sport <= 0:
+        :...cma_Quebec > 0:
+            :...nochrd_Managers > 0: 1 (11/1)
+            :   nochrd_Managers <= 0:
+            :   :...marst_Divorced <= 0: 0 (28/2)
+            :       marst_Divorced > 0: 1 (3)
+            cma_Quebec <= 0:
+            :...citizen_Other > 0: 0 (146/62)
+                citizen_Other <= 0:
+                :...nochrd_Administrative_and_senior_clerical_personnel > 0:
+                    :...locstud_British_Columbia > 0: 1 (4)
+                    :   locstud_British_Columbia <= 0:
+                    :   :...locstud_Ontario > 0: 1 (23/9)
+                    :       locstud_Ontario <= 0: [S29]
+                    nochrd_Administrative_and_senior_clerical_personnel <= 0: [S30]
+
+SubTree [S16]
+
+mfs_Social_sciences_and_related_fields > 0: 0 (42/15)
+mfs_Social_sciences_and_related_fields <= 0:
+:...naics_Educational_services <= 0: 1 (176/58)
+    naics_Educational_services > 0: 0 (11/2)
+
+SubTree [S17]
+
+cow_Paid_worker_Working_for_wages__salary__tips_or_commission <= 0: 0 (28/6)
+cow_Paid_worker_Working_for_wages__salary__tips_or_commission > 0:
+:...pr_Alberta > 0: 0 (33/10)
+    pr_Alberta <= 0:
+    :...hdgree > 11: 1 (68/16)
+        hdgree <= 11:
+        :...naics_Wholesale_trade > 0: 1 (16/5)
+            naics_Wholesale_trade <= 0:
+            :...cip_Business_Management_PublicAdministration <= 0:
+                :...cip_Humanities <= 0: 0 (116/53)
+                :   cip_Humanities > 0: 1 (30/11)
+                cip_Business_Management_PublicAdministration > 0:
+                :...kol_English > 0: 1 (27/5)
+                    kol_English <= 0:
+                    :...marst_Legally_married <= 0: 1 (22/5)
+                        marst_Legally_married > 0: 0 (13/3)
+
+SubTree [S18]
+
+nochrd_Administrative_and_senior_clerical_personnel > 0: 0 (93/20)
+nochrd_Administrative_and_senior_clerical_personnel <= 0:
+:...agegrp <= 35:
+    :...nocs_Occupations_in_natural_and_applied_sciences > 0: 1 (11/2)
+    :   nocs_Occupations_in_natural_and_applied_sciences <= 0:
+    :   :...nochrd_Professionals > 0: 0 (204/51)
+    :       nochrd_Professionals <= 0:
+    :       :...hhsize <= 3: 1 (6/1)
+    :           hhsize > 3: 0 (4/1)
+    agegrp > 35:
+    :...naics_Information_and_cultural_industries > 0:
+        :...cma_Montreal <= 0:
+        :   :...powst_Worked_in_a_different_county <= 0: 0 (17)
+        :   :   powst_Worked_in_a_different_county > 0: 1 (2)
+        :   cma_Montreal > 0:
+        :   :...hhsize <= 2: 1 (7/1)
+        :       hhsize > 2: 0 (3)
+        naics_Information_and_cultural_industries <= 0:
+        :...cip_Architecture_Eingeering_andRelatedTechnologies > 0: 0 (20/8)
+            cip_Architecture_Eingeering_andRelatedTechnologies <= 0:
+            :...cma_Toronto <= 0:
+                :...agegrp > 40: 1 (498/231)
+                :   agegrp <= 40: [S31]
+                cma_Toronto > 0:
+                :...citizen_Canada_naturalization <= 0: 1 (54/9)
+                    citizen_Canada_naturalization > 0:
+                    :...powst_No_fixed_address > 0: 0 (4)
+                        powst_No_fixed_address <= 0:
+                        :...locstud_Ontario <= 0: 0 (29/13)
+                            locstud_Ontario > 0:
+                            :...mtnno_Polish <= 0: 1 (17)
+                                mtnno_Polish > 0: 0 (2)
+
+SubTree [S19]
+
+powst_Worked_in_a_different_census_municipality_within <= 0: 1 (319/81)
+powst_Worked_in_a_different_census_municipality_within > 0:
+:...nochrd_Intermediate_sales_and_service_personnel > 0: 0 (5)
+    nochrd_Intermediate_sales_and_service_personnel <= 0:
+    :...locstud_British_Columbia <= 0: 1 (34/8)
+        locstud_British_Columbia > 0: 0 (17/6)
+
+SubTree [S20]
+
+mtnno_No_non_official_language > 0: 1 (66/27)
+mtnno_No_non_official_language <= 0:
+:...kol_Both_EnglishFrench <= 0: 0 (20/3)
+    kol_Both_EnglishFrench > 0: 1 (5/1)
+
+SubTree [S21]
+
+mfs_Engineering_and_applied_sciences > 0: 1 (111/29)
+mfs_Engineering_and_applied_sciences <= 0:
+:...hdgree <= 9:
+    :...marst_Legally_married <= 0: 0 (87/32)
+    :   marst_Legally_married > 0: 1 (208/89)
+    hdgree > 9:
+    :...pr_Manitoba <= 0: 1 (314/97)
+        pr_Manitoba > 0: 0 (18/5)
+
+SubTree [S22]
+
+powst_Worked_in_census_municipality_of_residence > 0: 0 (57/17)
+powst_Worked_in_census_municipality_of_residence <= 0:
+:...cip_Education <= 0: 1 (35/7)
+    cip_Education > 0: 0 (11/2)
+
+SubTree [S23]
+
+powst_Worked_in_a_different_county <= 0: 0 (11/1)
+powst_Worked_in_a_different_county > 0: 1 (3)
+
+SubTree [S24]
+
+mtnno_No_non_official_language > 0: 1 (132/31)
+mtnno_No_non_official_language <= 0:
+:...kol_French <= 0: 1 (13/5)
+    kol_French > 0: 0 (5)
+
+SubTree [S25]
+
+nocs_Occupations_in_natural_and_applied_sciences <= 0: 1 (23/3)
+nocs_Occupations_in_natural_and_applied_sciences > 0: 0 (2)
+
+SubTree [S26]
+
+powst_Worked_in_a_different_census_municipality_within <= 0: 1 (58/26)
+powst_Worked_in_a_different_census_municipality_within > 0: 0 (16/3)
+
+SubTree [S27]
+
+cip_Business_Management_PublicAdministration <= 0: 0 (18/3)
+cip_Business_Management_PublicAdministration > 0: 1 (13/4)
+
+SubTree [S28]
+
+cow_Self_employed_without_paid_help__not_incorporated > 0: 0 (102/41)
+cow_Self_employed_without_paid_help__not_incorporated <= 0:
+:...naics_Other_services_except_public_administration > 0: [S32]
+    naics_Other_services_except_public_administration <= 0:
+    :...nocs_Other_trades_occupations > 0:
+        :...citizen_Canada_birth <= 0: 0 (124/42)
+        :   citizen_Canada_birth > 0:
+        :   :...naics_Transportation_and_warehousing <= 0: 1 (57/19)
+        :       naics_Transportation_and_warehousing > 0: 0 (4)
+        nocs_Other_trades_occupations <= 0:
+        :...naics_Utilities > 0: 1 (157/7)
+            naics_Utilities <= 0:
+            :...mtnno_Aboriginal_languages > 0: 0 (31/13)
+                mtnno_Aboriginal_languages <= 0:
+                :...locstud_Eastern_Asia > 0:
+                    :...naics_Retail_trade > 0: 0 (15/1)
+                    :   naics_Retail_trade <= 0: [S33]
+                    locstud_Eastern_Asia <= 0:
+                    :...locstud_Southeast_and_Southern_Asia > 0: [S34]
+                        locstud_Southeast_and_Southern_Asia <= 0:
+                        :...pr_PrinceEdwardIsland > 0:
+                            :...nocs_Teachers_and_professors <= 0: 1 (31/13)
+                            :   nocs_Teachers_and_professors > 0: 0 (11/1)
+                            pr_PrinceEdwardIsland <= 0:
+                            :...naics_Arts__entertainment_and_recreation > 0:
+                                :...agegrp > 55: 0 (8)
+                                :   agegrp <= 55:
+                                :   :...pr_Alberta > 0: 0 (15/3)
+                                :       pr_Alberta <= 0: [S35]
+                                naics_Arts__entertainment_and_recreation <= 0: [S36]
+
+SubTree [S29]
+
+locstud_Other_countries_and_regions <= 0: 0 (26/3)
+locstud_Other_countries_and_regions > 0: 1 (2)
+
+SubTree [S30]
+
+naics_Administrative_and_support__waste_management_and > 0: 0 (29/11)
+naics_Administrative_and_support__waste_management_and <= 0:
+:...naics_Health_care_and_social_assistance > 0: 0 (94/42)
+    naics_Health_care_and_social_assistance <= 0:
+    :...nochrd_Supervisors > 0: 0 (40/17)
+        nochrd_Supervisors <= 0:
+        :...locstud_United_States_of_America > 0:
+            :...cip_Humanities <= 0: 1 (31/2)
+            :   cip_Humanities > 0: 0 (2)
+            locstud_United_States_of_America <= 0:
+            :...cip_Agriculture_NatResources_Conservation <= 0: [S37]
+                cip_Agriculture_NatResources_Conservation > 0:
+                :...cma_Edmonton <= 0: 0 (38/14)
+                    cma_Edmonton > 0: 1 (4)
+
+SubTree [S31]
+
+mfs_Educational__recreational_and_counselling_services <= 0:
+:...kol_Both_EnglishFrench <= 0: 0 (85/30)
+:   kol_Both_EnglishFrench > 0: 1 (65/27)
+mfs_Educational__recreational_and_counselling_services > 0:
+:...pr_Quebec <= 0: 1 (23/10)
+    pr_Quebec > 0: 0 (32/1)
+
+SubTree [S32]
+
+nocs_Occupations_in_social_science__government_services_and_religion <= 0: 1 (258/97)
+nocs_Occupations_in_social_science__government_services_and_religion > 0:
+:...cma_Vancouver <= 0: 0 (204/43)
+    cma_Vancouver > 0:
+    :...citizen_Canada_naturalization <= 0: 1 (10/1)
+        citizen_Canada_naturalization > 0: 0 (3)
+
+SubTree [S33]
+
+nocs_Occupations_in_natural_and_applied_sciences <= 0: 0 (123/46)
+nocs_Occupations_in_natural_and_applied_sciences > 0: 1 (156/60)
+
+SubTree [S34]
+
+nocs_Professional_occupations_in_business_and_finance > 0: 0 (72/19)
+nocs_Professional_occupations_in_business_and_finance <= 0:
+:...agegrp <= 35:
+    :...cma_Toronto <= 0: 1 (37/17)
+    :   cma_Toronto > 0: 0 (65/18)
+    agegrp > 35:
+    :...mfs_Humanities_and_related_fields > 0: [S38]
+        mfs_Humanities_and_related_fields <= 0:
+        :...cip_Business_Management_PublicAdministration <= 0: [S39]
+            cip_Business_Management_PublicAdministration > 0:
+            :...mtnno_Dravidian_languages <= 0: 0 (35/13)
+                mtnno_Dravidian_languages > 0: 1 (5)
+
+SubTree [S35]
+
+cip_Visual_PerformingArts_CommunicationsTechnologies <= 0: 1 (100/40)
+cip_Visual_PerformingArts_CommunicationsTechnologies > 0: 0 (12/2)
+
+SubTree [S36]
+
+cow_Paid_worker_Originally_self_employed_without_paid_help__incorporated > 0:
+:...fol_English <= 0: 0 (33/10)
+:   fol_English > 0: 1 (177/73)
+cow_Paid_worker_Originally_self_employed_without_paid_help__incorporated <= 0:
+:...sex_female <= 0:
+    :...cow_Self_employed_with_paid_help__not_incorporated > 0:
+    :   :...locstud_Alberta > 0: 1 (11)
+    :   :   locstud_Alberta <= 0:
+    :   :   :...hrswrk <= 46: 0 (29/7)
+    :   :       hrswrk > 46: 1 (53/16)
+    :   cow_Self_employed_with_paid_help__not_incorporated <= 0:
+    :   :...attsch_Attended > 0:
+    :       :...agegrp > 35: 1 (378/90)
+    :       :   agegrp <= 35:
+    :       :   :...locstud_Alberta > 0: 1 (12/1)
+    :       :       locstud_Alberta <= 0:
+    :       :       :...cma_Toronto > 0: 1 (33/11)
+    :       :           cma_Toronto <= 0:
+    :       :           :...nochrd_Professionals > 0: 0 (81/23)
+    :       :               nochrd_Professionals <= 0:
+    :       :               :...marst_Single > 0: 0 (9/2)
+    :       :                   marst_Single <= 0: [S40]
+    :       attsch_Attended <= 0:
+    :       :...citizen_Other > 0:
+    :           :...fol_Both_EnglishFrench > 0: 0 (15/4)
+    :           :   fol_Both_EnglishFrench <= 0:
+    :           :   :...mtnno_Arabic <= 0: 1 (244/73)
+    :           :       mtnno_Arabic > 0:
+    :           :       :...hrswrk <= 54: 0 (9/1)
+    :           :           hrswrk > 54: 1 (4)
+    :           citizen_Other <= 0:
+    :           :...powst_Worked_at_home <= 0: 1 (7533/1378)
+    :               powst_Worked_at_home > 0:
+    :               :...cma_other > 0: [S41]
+    :                   cma_other <= 0:
+    :                   :...naics_Manufacturing > 0: 1 (27/1)
+    :                       naics_Manufacturing <= 0:
+    :                       :...cma_Montreal <= 0:
+    :                           :...locstud_British_Columbia <= 0: 1 (181/44)
+    :                           :   locstud_British_Columbia > 0: 0 (16/7)
+    :                           cma_Montreal > 0:
+    :                           :...citizen_Canada_birth <= 0: 0 (7/1)
+    :                               citizen_Canada_birth > 0:
+    :                               :...hdgree <= 10: 0 (14/4)
+    :                                   hdgree > 10: 1 (7)
+    sex_female > 0:
+    :...agegrp <= 35:
+        :...kol_French > 0:
+        :   :...nocs_Other_management_occupations <= 0: 0 (81/17)
+        :   :   nocs_Other_management_occupations > 0:
+        :   :   :...marst_Single <= 0: 1 (9/1)
+        :   :       marst_Single > 0: 0 (2)
+        :   kol_French <= 0:
+        :   :...attsch_Attended > 0:
+        :       :...mfs_Engineering_and_applied_sciences <= 0: 0 (157/53)
+        :       :   mfs_Engineering_and_applied_sciences > 0: 1 (8/1)
+        :       attsch_Attended <= 0: [S42]
+        agegrp > 35:
+        :...mtnno_Russian > 0: 0 (31/12)
+            mtnno_Russian <= 0:
+            :...kol_French > 0:
+                :...locstud_Quebec <= 0:
+                :   :...attsch_Attended <= 0: 1 (14)
+                :   :   attsch_Attended > 0: 0 (2)
+                :   locstud_Quebec > 0: [S43]
+                kol_French <= 0:
+                :...pr_Newfoundland_Labrador > 0:
+                    :...hdgree <= 10: 0 (34/11)
+                    :   hdgree > 10: 1 (18/4)
+                    pr_Newfoundland_Labrador <= 0:
+                    :...pr_Manitoba > 0:
+                        :...hrswrk <= 45:
+                        :   :...cip_Education <= 0: 0 (70/26)
+                        :   :   cip_Education > 0: 1 (46/16)
+                        :   hrswrk > 45: [S44]
+                        pr_Manitoba <= 0:
+                        :...hrswrk > 41: 1 (1760/362)
+                            hrswrk <= 41:
+                            :...pr_Ontario > 0:
+                                :...locstud_United_States_of_America > 0: [S45]
+                                :   locstud_United_States_of_America <= 0: [S46]
+                                pr_Ontario <= 0:
+                                :...pr_Alberta > 0: 1 (232/66)
+                                    pr_Alberta <= 0: [S47]
+
+SubTree [S37]
+
+nochrd_Intermediate_sales_and_service_personnel <= 0: 1 (1269/415)
+nochrd_Intermediate_sales_and_service_personnel > 0: 0 (49/21)
+
+SubTree [S38]
+
+nocs_Occupations_in_social_science__government_services_and_religion <= 0: 0 (12/1)
+nocs_Occupations_in_social_science__government_services_and_religion > 0: 1 (2)
+
+SubTree [S39]
+
+mfs_Agricultural__biological__nutritional__and_food_sciences <= 0: 1 (196/59)
+mfs_Agricultural__biological__nutritional__and_food_sciences > 0: 0 (11/3)
+
+SubTree [S40]
+
+mtnno_Other_European_languages <= 0: 1 (28/4)
+mtnno_Other_European_languages > 0: 0 (2)
+
+SubTree [S41]
+
+mfs_Mathematics__computer_and_physical_sciences > 0: 1 (6)
+mfs_Mathematics__computer_and_physical_sciences <= 0:
+:...locstud_Alberta > 0: 1 (4)
+    locstud_Alberta <= 0:
+    :...citizen_Canada_birth <= 0: 1 (4/1)
+        citizen_Canada_birth > 0: 0 (23/3)
+
+SubTree [S42]
+
+mfs_Commerce__management_and_business_administration > 0: 1 (219/70)
+mfs_Commerce__management_and_business_administration <= 0:
+:...cma_Montreal > 0: 0 (82/30)
+    cma_Montreal <= 0:
+    :...locstud_British_Columbia <= 0: 1 (769/344)
+        locstud_British_Columbia > 0: 0 (80/28)
+
+SubTree [S43]
+
+mfs_Health_professions_and_related_technologies > 0: 1 (35/8)
+mfs_Health_professions_and_related_technologies <= 0:
+:...hdgree > 9: 1 (86/26)
+    hdgree <= 9:
+    :...cip_Mathematics_Computer_InformationSciences <= 0: 0 (162/60)
+        cip_Mathematics_Computer_InformationSciences > 0: 1 (3)
+
+SubTree [S44]
+
+cow_Paid_worker_Originally_self_employed_with_paid_help__incorporated <= 0: 1 (38/5)
+cow_Paid_worker_Originally_self_employed_with_paid_help__incorporated > 0: 0 (4/1)
+
+SubTree [S45]
+
+mfs_Commerce__management_and_business_administration <= 0: 1 (42/19)
+mfs_Commerce__management_and_business_administration > 0: 0 (7)
+
+SubTree [S46]
+
+nocs_Professional_occupations_in_business_and_finance <= 0: 1 (981/243)
+nocs_Professional_occupations_in_business_and_finance > 0:
+:...powst_Worked_in_a_different_census_municipality_within <= 0: 1 (83/29)
+    powst_Worked_in_a_different_census_municipality_within > 0: 0 (8/1)
+
+SubTree [S47]
+
+naics_Public_administration > 0: 1 (137/32)
+naics_Public_administration <= 0:
+:...hdgree > 10: 1 (241/67)
+    hdgree <= 10:
+    :...mfs_Health_professions_and_related_technologies > 0: 1 (108/36)
+        mfs_Health_professions_and_related_technologies <= 0:
+        :...naics_Professional__scientific_and_technical_services <= 0: 0 (426/187)
+            naics_Professional__scientific_and_technical_services > 0: 1 (40/14)
+
+
+Evaluation on training data (41864 cases):
+
+	    Decision Tree   
+	  ----------------  
+	  Size      Errors  
+
+	   309 9766(23.3%)   <<
+
+
+	   (a)   (b)    <-classified as
+	  ----  ----
+	 17084  5092    (a): class 0
+	  4674 15014    (b): class 1
+
+
+	Attribute usage:
+
+	100.00%	nocs_Chefs_and_cooks__supervisors__and_other_occupations_in_food_and_beverage_service
+	 99.72%	nocs_Service_supervisors__occupations_in_travel_and_accommodation__attendants_in
+	 98.54%	nochrd_Clerical_personnel
+	 93.16%	agegrp
+	 86.55%	hrswrk
+	 80.21%	naics_Utilities
+	 73.88%	nochrd_Semi_skilled_manual_workers
+	 70.50%	nochrd_Semi_professionals_and_technicians
+	 70.49%	sex_female
+	 65.84%	nochrd_Other_sales_and_service_personnel
+	 65.64%	nocs_Childcare_and_home_support_workers
+	 65.32%	nochrd_Other_manual_workers
+	 65.07%	nocs_Construction_trades
+	 64.42%	naics_Other_services_except_public_administration
+	 64.05%	nocs_Retail_trade_supervisors__salespersons__sales_clerks_and_cashiers
+	 60.22%	nocs_Technical__assisting_and_related_occupations_in_health
+	 57.42%	nochrd_Administrative_and_senior_clerical_personnel
+	 54.24%	nocs_Other_trades_occupations
+	 53.43%	locstud_Southeast_and_Southern_Asia
+	 51.58%	nocs_Clerical_occupations_and_clerical_supervisors
+	 51.49%	naics_Accommodation_and_food_services
+	 47.13%	naics_Mining_and_oil_and_gas_extraction
+	 43.14%	naics_Arts__entertainment_and_recreation
+	 40.40%	naics_Agriculture__forestry__fishing_and_hunting
+	 40.16%	cow_Self_employed_without_paid_help__not_incorporated
+	 37.96%	mtnno_Aboriginal_languages
+	 37.89%	locstud_Eastern_Asia
+	 36.19%	cow_Paid_worker_Originally_self_employed_without_paid_help__incorporated
+	 36.15%	pr_PrinceEdwardIsland
+	 28.54%	attsch_Attended
+	 25.44%	nocs_Trades_helpers__construction__and_transportation_labourers_and_related_occupations
+	 24.68%	citizen_Other
+	 22.46%	powst_Worked_at_home
+	 20.85%	cow_Self_employed_with_paid_help__not_incorporated
+	 16.39%	nocs_Senior_management_occupations
+	 14.34%	kol_French
+	 13.05%	nochrd_Managers
+	 11.17%	nocs_Teachers_and_professors
+	 11.01%	mtnno_Russian
+	 10.96%	hdgree
+	 10.88%	pr_Manitoba
+	 10.21%	pr_Newfoundland_Labrador
+	  9.78%	mfs_Health_professions_and_related_technologies
+	  8.73%	nocs_Occupations_unique_to_primary_industries
+	  8.70%	naics_Public_administration
+	  8.26%	naics_Administrative_and_support__waste_management_and
+	  7.45%	nochrd_Skilled_sales_and_service_personnel
+	  6.97%	naics_Educational_services
+	  6.25%	pr_Ontario
+	  6.01%	locstud_United_States_of_America
+	  5.64%	nocs_Occupations_in_social_science__government_services_and_religion
+	  5.62%	powst_No_fixed_address
+	  5.16%	nochrd_Skilled_crafts_and_trades_workers
+	  5.10%	mfs_Fine_and_applied_arts
+	  4.82%	naics_Transportation_and_warehousing
+	  4.38%	nocs_Occupations_in_art__culture__recreation_and_sport
+	  4.30%	cma_Quebec
+	  4.05%	naics_Health_care_and_social_assistance
+	  3.99%	locstud_British_Columbia
+	  3.91%	pr_Alberta
+	  3.74%	mfs_Commerce__management_and_business_administration
+	  3.60%	nocs_Professional_occupations_in_business_and_finance
+	  3.56%	pr_Quebec
+	  3.42%	nochrd_Supervisors
+	  3.28%	nochrd_Intermediate_sales_and_service_personnel
+	  3.25%	cip_Agriculture_NatResources_Conservation
+	  3.24%	cma_Montreal
+	  3.19%	cma_Hamilton
+	  2.58%	naics_Information_and_cultural_industries
+	  2.54%	cma_Toronto
+	  2.48%	naics_Manufacturing
+	  2.44%	mfs_Engineering_and_applied_sciences
+	  2.35%	marst_Single
+	  2.13%	cip_Visual_PerformingArts_CommunicationsTechnologies
+	  1.98%	cip_Architecture_Eingeering_andRelatedTechnologies
+	  1.87%	mtnno_No_non_official_language
+	  1.84%	marst_Legally_married
+	  1.82%	citizen_Canada_birth
+	  1.64%	locstud_Quebec
+	  1.60%	naics_Retail_trade
+	  1.56%	nochrd_Professionals
+	  1.29%	powst_Worked_in_a_different_census_municipality_within
+	  1.29%	locstud_Ontario
+	  1.26%	nocs_Occupations_in_natural_and_applied_sciences
+	  1.16%	cip_Business_Management_PublicAdministration
+	  1.11%	naics_Professional__scientific_and_technical_services
+	  0.97%	cip_Humanities
+	  0.93%	cma_other
+	  0.84%	cow_Paid_worker_Working_for_wages__salary__tips_or_commission
+	  0.77%	kol_Both_EnglishFrench
+	  0.76%	cip_Social_BehaviouralSciences_Law
+	  0.72%	cma_Vancouver
+	  0.69%	locstud_Alberta
+	  0.65%	fol_Both_EnglishFrench
+	  0.62%	mfs_Humanities_and_related_fields
+	  0.61%	mtnno_Arabic
+	  0.61%	cip_Education
+	  0.60%	naics_Wholesale_trade
+	  0.55%	mfs_Social_sciences_and_related_fields
+	  0.50%	fol_English
+	  0.49%	mfs_Agricultural__biological__nutritional__and_food_sciences
+	  0.49%	mfs_Educational__recreational_and_counselling_services
+	  0.45%	cip_Health_Parks_Recreation_Fitness
+	  0.41%	marst_Divorced
+	  0.40%	pr_BritishColumbia
+	  0.39%	cip_Mathematics_Computer_InformationSciences
+	  0.36%	cma_Edmonton
+	  0.28%	citizen_Canada_naturalization
+	  0.25%	powst_Worked_in_census_municipality_of_residence
+	  0.22%	nocs_Other_management_occupations
+	  0.20%	powst_Worked_in_a_different_county
+	  0.20%	fol_French
+	  0.19%	naics_Finance_and_insurance
+	  0.15%	kol_English
+	  0.12%	hhsize
+	  0.10%	cow_Paid_worker_Originally_self_employed_with_paid_help__incorporated
+	  0.10%	mtnno_Dravidian_languages
+	  0.09%	mfs_Mathematics__computer_and_physical_sciences
+	  0.08%	locstud_Nova_Scotia
+	  0.07%	mtnno_Other_European_languages
+	  0.07%	locstud_Other_countries_and_regions
+	  0.05%	mtnno_Polish
+	  0.02%	mtnno_Indo_Iranian_Languages
+
+
+Time: 36.1 secs
+
